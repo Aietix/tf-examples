@@ -35,17 +35,25 @@ variable "authorization_type" {
 }
 
 variable "lambda_role_name" {
-  description = "IAM role ARN attached to the Lambda Function. This governs both who / what can invoke your Lambda Function, as well as what resources our Lambda Function has access to. See Lambda Permission Model for more details."
+  description = "IAM role name for Lambda function"
   type        = string
+  default     = ""
+}
+
+variable "lambda_role_description" {
+  description = "IAM role description for Lambda function"
+  type        = string
+  default     = ""
 }
 
 variable "lambda_policy_name" {
-  description = "IAM policy name. It override the default value, which is the same as role_name"
+  description = "IAM policy name for Lambda function"
   type        = string
+  default     = ""
 }
 
 variable "lambda_policy_description" {
-  description = "IAM policy name. It override the default value, which is the same as role_name"
+  description = "IAM policy description Lambda function"
   type        = string
-  default     = null
+  default     = ""
 }

@@ -11,6 +11,7 @@ s3_bucket                 = "XXXX"
 runtime                   = "python3.9"
 handler                   = "lambda_function.lambda_handler"
 lambda_role_name          = "role_for_lambda"
+lambda_policy_description = "There is no description for lambda role"  
 lambda_policy_name        = "policy_for_lambda"
 lambda_policy_description = "There is no description for lambda policy"   
 ```

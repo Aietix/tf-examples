@@ -1,6 +1,7 @@
 # IAM role for Lambda Function
 resource "aws_iam_role" "lambda" {
-  name = var.lambda_role_name
+  name        = var.lambda_role_name
+  description = var.lambda_role_description
 
   assume_role_policy = <<EOF
 {
